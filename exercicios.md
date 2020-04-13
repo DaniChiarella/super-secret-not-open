@@ -46,7 +46,7 @@ Enunciados:
     numerico media;
 
     para (numerico i = 0; i < notas.lenght; i++){
-        escreva "Digite o Valor da Nota " + i + ":";
+        escreva "Digite o Valor da Nota " + (i+1) + ":";
         leia notas[i];
         media += notas[i];
     }
