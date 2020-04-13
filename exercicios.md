@@ -2,7 +2,7 @@ Enunciados:
 
 1) Imprime o seu nome e o número de chamada.
 
-    INICIO
+    INÍCIO
         
     literal nome; 
     numérico numero;
@@ -19,7 +19,7 @@ Enunciados:
 
 2) Receber o nome, endereço e telefone de uma empresa e imprimir os dados para confirmação.
 
-    INICIO
+    INÍCIO
         
     literal nomeEmpresa, endEmpresa; 
     numérico telEmpresa;
@@ -40,7 +40,7 @@ Enunciados:
 
 3) Fazer um algoritmo que recebe do usuário 4 notas e exibe a média aritmética dos números.
 
-    INICIO
+    INÍCIO
         
     numerico[4] notas;
     numerico media;
@@ -57,7 +57,7 @@ Enunciados:
 
 4) O algoritmo receberá um número inteiro e imprimirá seu sucessor e seu antecessor.
 
-    INICIO
+    INÍCIO
 
     numerico x;
 
@@ -72,7 +72,7 @@ Enunciados:
 
 5) Ler um número inteiro e imprimir seu quadrado.
 
-    INICIO
+    INÍCIO
 
     numerico x;
 
@@ -86,7 +86,7 @@ Enunciados:
 
 6) Receber um valor qualquer do teclado e imprimir esse valor com reajuste de 10%.
 
-    INICIO
+    INÍCIO
 
     numerico x
 
@@ -102,7 +102,7 @@ Enunciados:
 
 7) Solicitar o valor de um produto, calcular o desconto de 5,5% e imprimir o valor a pagar.
 
-    INICIO
+    INÍCIO
     
     numerico valorProduto;
 
@@ -117,7 +117,7 @@ Enunciados:
 
 8) Ler o peso em gramas e o preço do quilo da castanha-do-pará e imprimir o preço que o consumidor deverá pagar.
 
-    INICIO
+    INÍCIO
     
     numerico precoQuilo, gramas;
 
@@ -139,7 +139,7 @@ Enunciados:
 
 9) Ler a quantidade de meninos e meninas de uma sala. Calcular e imprimir o percentual de meninos e meninas.
 
-    INICIO
+    INÍCIO
     numerico qtdMenino, qtdMenina;
 
     escreva "Digite a quantidade de meninos presentes na sala de aula: ";
@@ -160,9 +160,105 @@ Enunciados:
     FIM
 
 10) Solicitar o tempo inicial de uma competição de uma maratona e o tempo final do primeiro corredor. Calcule o tempo de duração da maratona desse competidor.
+
+    INÍCIO
+
+    numerico horas, minutos, horasFinal, minutosFinal, totalMinutos, finalHora, finalMinutos;
+
+    escreva "Informe o horário de início da prova (Horas)";
+    leia horas;
+
+    escreva "Informe o horário de início da prova (Minutos)";
+    leia minutos;
+
+    escreva "Informe o horário de fim da prova (Horas)";
+    leia horasFinal;
+
+    escreva "Informe o horário de fim da prova (Minutos)";
+    leia minutosFinal;
+
+    numerico tempoinicio = (horas*60)+minutos;
+    numerico tempofim = (horasFinal*60)+minutosFinal;
+
+    totalMinutos = tempofim-tempoinicio;
+    finalHora = totalMinutos div 60;
+    finalMinutos = totalMinutos % 60
+    escreva "A duração da prova foi de:  "+ finalHora + ":" + finalMinutos;
+    FIM
+
 11) Para ler o número total de eleitores de um município, o número de votos brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.
+
+    INÍCIO
+    numerico validos, brancos, nulos, total, pctValidos, pctNulos, pctBrancos;
+
+    escreva "Informe o número de votos válidos";
+    leia validos;
+
+    escreva "Informe o número de votos nulos";
+    leia nulos;
+
+    escreva "Informe o número de votos brancos";
+    leia brancos;
+
+    total = validos+nulos+brancos;
+
+    pctValidos = (validos*100)/total;
+    pctNulos = (nulos*100)/total;
+    pctBrancos = (brancos*100)/total;
+
+    escreva "Percentual de votos válidos:";
+    escreva pctValidos;
+
+    escreva "Percentual de votos nulos:";
+    escreva pctNulos;
+
+    escreva "Percentual de votos brancos:";
+    escreva pctBrancos;
+
+    FIM
+
+
 12) Informe o tempo gasto numa viagem (em horas), a velocidade média e calcule o consumo.
-13) Calcular o consumo de um veículo conforme os dados informados no teclado: tempo em horas, velocidade média e distância. 
+
+    INÍCIO
+    numerico horas, velMedia, distancia, gastoMedio, consumo;
+    escreva "Informe o tempo gasto na viagem em horas";
+    leia horas;
+    escreva "Informe a velocidade média do veículo";
+    leia velMedia;
+    escreva "Informe o gasto de combustivel por km do veículo";
+    leia gastoMedio;
+    distancia = horas * velMedia;
+    consumo = distancia / gastoMedio;
+    escreva "Combustível gasto (em litros):";
+    escreva consumo;
+    FIM
+
+
 14) Cálculo de um salario líquido de um professor. Serão fornecidos valor da hora aula, numero de aulas dadas e o % de desconto do INSS.
+
+    INÍCIO
+    numerico valorHora, numAulas, valorMinuto, liquido, bruto, INSS;
+    escreva "Digite o valor da hora de aula";
+    leia valorHora;
+    escreva "Digite o numero de aulas";
+    leia numAulas;
+    valorMinuto = X/60;
+    bruto = valorMinuto*(numAulas*50)
+    escreva "Digite o desconto do INSS (em %)";
+    leia INSS;
+    liquido = bruto - (bruto*(INSS/100));
+    escreva "O salário liquido (em R$) do professor é de:"
+    escreva liquido;
+    FIM
+
 15) Ler uma temperatura em graus Celsius e transformá-la em graus Fahrenheit.
 
+    INÍCIO
+    numerico tempCelsius, tempFahrenheit;
+    escreva "Digite a temperatura em graus Celsius";
+    leia tempCelsius;
+    tempFahrenheit = (tempCelsius * (9/5)) + 32;
+    escreva "A temperatura em Fahrenheit:"
+    escreva tempFahrenheit;
+    FIM
