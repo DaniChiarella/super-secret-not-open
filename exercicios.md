@@ -2,7 +2,9 @@ Enunciados:
 
 ## 1) Imprime o seu nome e o número de chamada.
 
-###    INÍCIO
+### Algoritmo:
+
+    INÍCIO
         
     literal nome; 
     numérico numero;
@@ -19,7 +21,9 @@ Enunciados:
 
 ## 2) Receber o nome, endereço e telefone de uma empresa e imprimir os dados para confirmação.
 
-###    INÍCIO
+### Algoritmo:
+
+    INÍCIO
         
     literal nomeEmpresa, endEmpresa; 
     numérico telEmpresa;
@@ -40,7 +44,9 @@ Enunciados:
 
 ## 3) Fazer um algoritmo que recebe do usuário 4 notas e exibe a média aritmética dos números.
 
-###    INÍCIO
+### Algoritmo:
+
+    INÍCIO
         
     numerico[4] notas;
     numerico media;
@@ -57,7 +63,9 @@ Enunciados:
 
 ## 4) O algoritmo receberá um número inteiro e imprimirá seu sucessor e seu antecessor.
 
-###    INÍCIO
+### Algoritmo:
+
+    INÍCIO
 
     numerico x;
 
@@ -72,7 +80,9 @@ Enunciados:
 
 ## 5) Ler um número inteiro e imprimir seu quadrado.
 
-###    INÍCIO
+### Algoritmo:
+
+    INÍCIO
 
     numerico x;
 
@@ -86,7 +96,9 @@ Enunciados:
 
 ## 6) Receber um valor qualquer do teclado e imprimir esse valor com reajuste de 10%.
 
-###    INÍCIO
+### Algoritmo:
+
+    INÍCIO
 
     numerico x
 
@@ -102,7 +114,9 @@ Enunciados:
 
 ## 7) Solicitar o valor de um produto, calcular o desconto de 5,5% e imprimir o valor a pagar.
 
-###    INÍCIO
+### Algoritmo:
+
+    INÍCIO
     
     numerico valorProduto;
 
@@ -117,7 +131,9 @@ Enunciados:
 
 ## 8) Ler o peso em gramas e o preço do quilo da castanha-do-pará e imprimir o preço que o consumidor deverá pagar.
 
-###    INÍCIO
+### Algoritmo:
+
+    INÍCIO
     
     numerico precoQuilo, gramas;
 
@@ -139,7 +155,9 @@ Enunciados:
 
 ## 9) Ler a quantidade de meninos e meninas de uma sala. Calcular e imprimir o percentual de meninos e meninas.
 
-###    INÍCIO
+### Algoritmo:
+
+    INÍCIO
 
     numerico qtdMenino, qtdMenina;
 
@@ -162,7 +180,9 @@ Enunciados:
 
 ## 10) Solicitar o tempo inicial de uma competição de uma maratona e o tempo final do primeiro corredor. Calcule o tempo de duração da maratona desse competidor.
 
-###    INÍCIO
+### Algoritmo:
+
+    INÍCIO
 
     numerico horas, minutos, horasFinal, minutosFinal, totalMinutos, finalHora, finalMinutos;
 
@@ -184,14 +204,16 @@ Enunciados:
     totalMinutos = tempofim-tempoinicio;
     finalHora = totalMinutos div 60;
     finalMinutos = totalMinutos % 60
-    
+
     escreva "A duração da prova foi de:  "+ finalHora + ":" + finalMinutos;
 
     FIM
 
 ## 11) Para ler o número total de eleitores de um município, o número de votos brancos, nulos e válidos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.
 
-###    INÍCIO
+### Algoritmo:
+
+    INÍCIO
 
     numerico validos, brancos, nulos, total, pctValidos, pctNulos, pctBrancos;
 
@@ -224,7 +246,9 @@ Enunciados:
 
 ## 12) Informe o tempo gasto numa viagem (em horas), a velocidade média e calcule o consumo.
 
-###    INÍCIO
+### Algoritmo:
+
+    INÍCIO
 
     numerico horas, velMedia, distancia, gastoMedio, consumo;
     escreva "Informe o tempo gasto na viagem em horas";
@@ -247,7 +271,9 @@ Enunciados:
 
  ## 14) Cálculo de um salario líquido de um professor. Serão fornecidos valor da hora aula, numero de aulas dadas e o % de desconto do INSS.
 
- #   INÍCIO
+### Algoritmo:
+
+    INÍCIO
 
     numerico valorHora, numAulas, valorMinuto, liquido, bruto, INSS;
 
@@ -272,7 +298,10 @@ Enunciados:
 
  ## 15) Ler uma temperatura em graus Celsius e transformá-la em graus Fahrenheit.
 
-###    INÍCIO
+### Algoritmo:
+
+    INÍCIO
+    
     numerico tempCelsius, tempFahrenheit;
 
     escreva "Digite a temperatura em graus Celsius";
